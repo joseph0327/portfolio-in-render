@@ -12,13 +12,13 @@ def contact(request):
         message = request.POST.get('message')
 
         # Save to the database
-        Contact.objects.create(
-            full_name=full_name,
-            email=email,
-            mobile_number=mobile_number,
-            subject=subject,
-            message=message,
-        )
+        # Contact.objects.create(
+        #     full_name=full_name,
+        #     email=email,
+        #     mobile_number=mobile_number,
+        #     subject=subject,
+        #     message=message,
+        # )
         messages.success(request, 'Your message has been sent successfully!')
         return redirect('home')     
 
