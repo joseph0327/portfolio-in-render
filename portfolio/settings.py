@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#@u6%kvan8(1im__6tf_!k8!b7&zity6u4)m@!ce!6d))q3)%@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['portfolio-n9s9.onrender.com','*']
 
 
 # Application definition
@@ -57,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
