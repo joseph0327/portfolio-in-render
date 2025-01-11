@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'ckeditor',
 ]
 
-
+#    'whitenoise.middleware.WhiteNoiseMiddleware',
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -161,3 +161,15 @@ CKEDITOR_CONFIGS = {
         'width': '100%',
     },
 }
+
+
+# # Email settings for Gmail
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'  # Gmail SMTP server
+# EMAIL_PORT = 587  # TLS port
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'myemail@gmail.com'  # Your Gmail address
+# EMAIL_HOST_PASSWORD = 'abcdefg123456'  # Your Gmail app password
+
+# DEFAULT_FROM_EMAIL = 'myemail@gmail.com'  # Default sender email
+# CONTACT_EMAIL = 'receiveremail@example.com'  # Email to receive contact form messages
