@@ -10,7 +10,7 @@ from favoriteslist.views import _favorites_id
 
 def home(request):
     categoryitems = Category.objects.all()
-    latestitems = Item.objects.all().order_by('created_date')[:12]
+    latestitems = Item.objects.all().order_by('-created_date')[:12]
     certlist = Certificates.objects.all().order_by('-created_date')[:8]
     
     #Get the current session's favorites list
